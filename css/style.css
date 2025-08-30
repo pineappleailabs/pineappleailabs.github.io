@@ -103,7 +103,7 @@ img, svg, video {
 
 .hero-cta {
   display: inline-flex;
-  padding: clamp(10px, 1.2vw, 12px) clamp(20px, 3.2vw, 30px);
+  padding: clamp(10px, 1.2vw, 12px) clamp(30px, 3.2vw, 30px);
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -271,3 +271,4 @@ footer p {
     .hero-text { font-size: 40px; line-height: 45px; }
     .hero-proof { width: 12rem;}
 }
+
