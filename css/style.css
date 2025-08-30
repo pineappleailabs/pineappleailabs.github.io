@@ -103,7 +103,7 @@ img, svg, video {
 
 .hero-cta {
   display: inline-flex;
-  padding: clamp(10px, 1.2vw, 12px) clamp(30px, 3.2vw, 30px);
+  padding: clamp(12px, 1.2vw, 12px) clamp(30px, 3.2vw, 30px);
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -251,7 +251,7 @@ footer p {
 }
 
 @media (max-width: 520px) {
-  .hero-section {min-height: 650px;}
+  .hero-section {min-height: 700px;}
   .hero-content { width: 92%; margin-bottom: clamp(70px, 30vh, 260px);}
   .hero-text{font-size: 54px; line-height: 65px;}
   .hero-sub-text { max-width: 34ch; }
@@ -271,4 +271,5 @@ footer p {
     .hero-text { font-size: 40px; line-height: 45px; }
     .hero-proof { width: 12rem;}
 }
+
 
