@@ -1,0 +1,58 @@
+/* ECLIPSE SLIDE-IN */
+@keyframes slideUp {
+  0% {
+    transform: translate(-50%, 100%); /* start way below */
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0); /* final centered */
+    opacity: 1;
+  }
+}
+
+.eclipse {
+  animation: slideUp 1.3s cubic-bezier(0.77, 0, 0.175, 1) forwards; 
+  /* smooth, natural easing */
+}
+
+/* TEXT FADE + SLIDE-IN */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-proof,
+.hero-text, 
+.hero-sub-text, 
+.hero-cta,
+.sub-hero-container h2,
+.sub-hero-container h3{
+  opacity: 0; /* start hidden */
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Stagger effect (delay each one) */
+.hero-text {
+  animation-delay: 1s; /* after eclipse */
+}
+.hero-sub-text {
+  animation-delay: 1.3s;
+}
+.hero-cta {
+  animation-delay: 1.3s;
+}
+.hero-proof{
+    animation-delay: 1.3s;
+}
+.sub-hero-container h2{
+    animation-delay: 0.5s;
+}
+.sub-hero-container h3{
+    animation-delay: 0.7s;
+}
